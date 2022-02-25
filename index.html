@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        user enrollment form
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1 class="title">User enrollment form</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                  <div class="form-outline">
+                    <p>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</p>
+                    <input class="txtComputer" type="text" name="fullName" id="fullName">
+                  </div>
+
+                  <div class="form-outline">
+                    <p>Address</p>
+                    <input class="txtComputer" type="text" name="addr" id="addr">
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <p>Phone no.</p>
+                    <input class="txtComputer" type="text" name="phone" id="phone">
+                  </div>
+
+
+                  <div class="form-outline mb-4">
+                    <p>Email</p>
+                    <input class="txtComputer" type="text" name="email" id="email">
+                  </div>
+
+
+                  <div  class="form-action-buttons">
+                      <!-- <input type="submit" value="Submit"> -->
+                      <button type="submit" name="submit"><span>Submit</span> </button>
+                  </div>
+                </form>
+            </td>
+            <td valign = "top">
+                <table class="list" id="userList">
+                    <thead>
+                        <h2 id="list-title">User Details</h2>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Address</th>
+                            <th>Phone no</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
